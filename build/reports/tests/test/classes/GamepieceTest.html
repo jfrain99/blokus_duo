@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class GamepieceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class GamepieceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; GamepieceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.007s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">cloning_shouldReturnTrue_whenComparingLocationsWithSameXY()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">equals_shouldCorrectlyCompareGamepiece_withGamepieceAndNonGamepieceObjects()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flipAlongY_shouldProduceTwoDistinctShapes_whenAppliedToWPiece()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getLocations_shouldReturnCorrectLocaitons_afterGamepieceIsCreated()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getPlayerNo_shouldReturnCorrectPlayerNo_afterGamepieceIsCreated()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">rotateRight_shouldProduceFourDistinctShapes_whenAppliedToWPiece()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Gamepiece equality: check that equals returns correct values when comparing gamepiece with gamepiece and non-gamepiece objects
+Gamepiece test: check that getLocations() returns correct value
+	Testing for Gamepiece([],1):
+		expected Locations() = []
+		getLocations() = []
+	Testing for Gamepiece([0, 0, 1, 0, 1, 1, 1, 2, 1, 3],0):
+		expected Locations() = [model.Location@10b005d9(x=0,y=0), model.Location@7f9700e2(x=1,y=0), model.Location@81d378d(x=1,y=1), model.Location@71031ee3(x=1,y=2), model.Location@610d53d7(x=1,y=3)]
+		getLocations() = [model.Location@265adf04(x=0,y=0), model.Location@479a351d(x=1,y=0), model.Location@2e87df0b(x=1,y=1), model.Location@251fa2e7(x=1,y=2), model.Location@55cdfbbf(x=1,y=3)]
+Gamepiece test: check that Gamepiece object constructed from another Gamepiece object has the same array of locations and playerNo
+	Testing for 
+		given Gamepiece   = model.Gamepiece@5386ee37(Locations =[model.Location@b56763a(x=0,y=0), model.Location@317c74ec(x=1,y=0), model.Location@3a68532b(x=1,y=1), model.Location@5efbe507(x=2,y=1), model.Location@6624bf44(x=2,y=2)],playerNo=0),
+		returned Gamepiece = model.Gamepiece@34ad6c78(Locations =[model.Location@4ca480cd(x=0,y=0), model.Location@4d768783(x=1,y=0), model.Location@e6bcff6(x=1,y=1), model.Location@517abcef(x=2,y=1), model.Location@39b0fce5(x=2,y=2)],playerNo=0)
+	Testing for 
+		given Gamepiece   = model.Gamepiece@40032ecf(Locations =[model.Location@10c75d46(x=0,y=0)],playerNo=1),
+		returned Gamepiece = model.Gamepiece@14de0675(Locations =[model.Location@2a3797df(x=0,y=0)],playerNo=1)
+Gamepiece test: check that rotating W piece to the right produces four distinct shapes and returns back to the original shape
+	Testing for 
+		given Gamepiece   = model.Gamepiece@599cef58(Locations =[model.Location@3d15b7b0(x=0,y=0), model.Location@2b0a46a2(x=1,y=0), model.Location@537e172(x=1,y=1), model.Location@3bef28a3(x=2,y=1), model.Location@2b57b059(x=2,y=2)],playerNo=0),
+		rotated Gamepiece = model.Gamepiece@5211dcc7(Locations =[model.Location@68979b86(x=0,y=0), model.Location@2a7f1c07(x=0,y=-1), model.Location@3c3ca469(x=1,y=-1), model.Location@6017b0cd(x=1,y=-2), model.Location@34084ce2(x=2,y=-2)],playerNo=0)
+	Testing for 
+		given Gamepiece   = model.Gamepiece@66c5e140(Locations =[model.Location@3f030e1d(x=0,y=0), model.Location@62cf40e8(x=0,y=-1), model.Location@14567f0f(x=1,y=-1), model.Location@5d504324(x=1,y=-2), model.Location@7a04dd75(x=2,y=-2)],playerNo=0),
+		rotated Gamepiece = model.Gamepiece@62d41add(Locations =[model.Location@455dbf8f(x=0,y=0), model.Location@1acb9d63(x=-1,y=0), model.Location@4678143a(x=-1,y=-1), model.Location@4b8fcda(x=-2,y=-1), model.Location@2cb19a05(x=-2,y=-2)],playerNo=0)
+	Testing for 
+		given Gamepiece   = model.Gamepiece@6a572a75(Locations =[model.Location@6c883ac1(x=0,y=0), model.Location@2f1545a6(x=-1,y=0), model.Location@f5483f3(x=-1,y=-1), model.Location@5c8314ee(x=-2,y=-1), model.Location@71f0738d(x=-2,y=-2)],playerNo=0),
+		rotated Gamepiece = model.Gamepiece@74cd3060(Locations =[model.Location@5fad6e11(x=0,y=0), model.Location@1bcd256e(x=0,y=1), model.Location@69535181(x=-1,y=1), model.Location@740032fb(x=-1,y=2), model.Location@40e9178c(x=-2,y=2)],playerNo=0)
+	Testing for 
+		given Gamepiece   = model.Gamepiece@327dbcaa(Locations =[model.Location@41d12c3d(x=0,y=0), model.Location@34b34916(x=0,y=1), model.Location@3c6e6d7b(x=-1,y=1), model.Location@63a90eb0(x=-1,y=2), model.Location@2b51663c(x=-2,y=2)],playerNo=0),
+		rotated Gamepiece = model.Gamepiece@50471b9(Locations =[model.Location@4acec1d7(x=0,y=0), model.Location@61b98ab0(x=1,y=0), model.Location@41f9603d(x=1,y=1), model.Location@67565802(x=2,y=1), model.Location@5b2aed46(x=2,y=2)],playerNo=0)
+Gamepiece test: check that flipping W piece along the vertical axis produces two distinct shapes and returns back to the original shape
+	Testing for 
+		given Gamepiece   = model.Gamepiece@7c196ee1(Locations =[model.Location@295aaf28(x=0,y=0), model.Location@25963798(x=1,y=0), model.Location@b57146b(x=1,y=1), model.Location@3c0e0d86(x=2,y=1), model.Location@40d1d6c0(x=2,y=2)],playerNo=1),
+		rotated Gamepiece = model.Gamepiece@54ef03b5(Locations =[model.Location@6728b10f(x=0,y=0), model.Location@2b86e251(x=-1,y=0), model.Location@652f4637(x=-1,y=1), model.Location@49f1138c(x=-2,y=1), model.Location@6b737374(x=-2,y=2)],playerNo=1)
+	Testing for 
+		given Gamepiece   = model.Gamepiece@777b8021(Locations =[model.Location@687a7e07(x=0,y=0), model.Location@29d67df7(x=-1,y=0), model.Location@59ce436a(x=-1,y=1), model.Location@729faafa(x=-2,y=1), model.Location@492e78e8(x=-2,y=2)],playerNo=1),
+		rotated Gamepiece = model.Gamepiece@538d9dff(Locations =[model.Location@78f351f7(x=0,y=0), model.Location@7734fc69(x=1,y=0), model.Location@4d67335f(x=1,y=1), model.Location@723a3d69(x=2,y=1), model.Location@1024a630(x=2,y=2)],playerNo=1)
+Gamepiece test: check that getPlayerNo() returns correct value
+	Testing for Gamepiece([0, 0, 1, 0, 1, 1],0): getPlayerNo() = 0
+	Testing for Gamepiece([0, 0, 1, 0, 1, 1],1): getPlayerNo() = 1
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at Dec 8, 2022, 3:58:46 PM</p>
+</div>
+</div>
+</body>
+</html>
